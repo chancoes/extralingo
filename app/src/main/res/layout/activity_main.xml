@@ -35,36 +35,39 @@
         app:srcCompat="@drawable/extralingo_mascot" />
 
 <!--    USERNAME TEXT FIELD     -->
+
+    <!--    PASSWORD TEXT FIELD     -->
     <EditText
         android:id="@+id/txt_UsernameInput"
         android:layout_width="231dp"
         android:layout_height="60dp"
         android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Username"
         android:inputType="text"
-        android:text="Username"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.463" />
+        app:layout_constraintVertical_bias="0.46" />
 
-<!--    PASSWORD TEXT FIELD     -->
+    <!--    PASSWORD LABEL      -->
     <EditText
         android:id="@+id/txt_PasswordInput"
         android:layout_width="231dp"
         android:layout_height="60dp"
         android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Password"
         android:inputType="textPassword"
-        android:text="Password Here"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintHorizontal_bias="0.916"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6" />
 
-<!--    PASSWORD LABEL      -->
     <TextView
         android:id="@+id/lbl_password"
         android:layout_width="130dp"
@@ -101,6 +104,7 @@
         android:layout_height="62dp"
         android:backgroundTint="#FCBF47"
         android:text="Sign In"
+        android:fontFamily="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,6 +118,7 @@
         android:layout_height="62dp"
         android:backgroundTint="#FCBF47"
         android:text="Register"
+        android:fontFamily="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
