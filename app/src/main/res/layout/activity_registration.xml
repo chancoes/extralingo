@@ -3,10 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-<!--    TITLE LABEL     -->
     <TextView
         android:id="@+id/lbl_Title"
         android:layout_width="304dp"
@@ -22,7 +20,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.046" />
 
-<!--    MASCOT IMAGE    -->
     <ImageView
         android:id="@+id/img_Mascot"
         android:layout_width="163dp"
@@ -35,7 +32,6 @@
         app:layout_constraintVertical_bias="0.23"
         app:srcCompat="@drawable/extralingo_mascot" />
 
-    <!--    USERNAME TEXT FIELD     -->
     <EditText
         android:id="@+id/txt_UsernameInput"
         android:layout_width="231dp"
@@ -51,38 +47,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.46" />
 
-    <!--    PASSWORD TEXT FIELD      -->
-    <EditText
-        android:id="@+id/txt_PasswordInput"
-        android:layout_width="231dp"
-        android:layout_height="60dp"
-        android:ems="10"
-        android:fontFamily="monospace"
-        android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
-
-<!--    PASSWORD LABEL      -->
-    <TextView
-        android:id="@+id/lbl_Password"
-        android:layout_width="130dp"
-        android:layout_height="30dp"
-        android:fontFamily="monospace"
-        android:text="Password"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59" />
-
-<!--    USERNAME LABEL      -->
     <TextView
         android:id="@+id/lbl_Username"
         android:layout_width="130dp"
@@ -97,8 +61,93 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.463" />
 
+    <EditText
+        android:id="@+id/txt_EmailInput"
+        android:layout_width="231dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Email"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.579" />
+
+    <TextView
+        android:id="@+id/lbl_password"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:fontFamily="monospace"
+        android:text="Password"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <EditText
+        android:id="@+id/txt_PasswordInput"
+        android:layout_width="231dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709" />
+
+    <TextView
+        android:id="@+id/lbl_Email"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:fontFamily="monospace"
+        android:text="Email"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
+
     <Button
-        android:id="@+id/btn_SignInAction"
+        android:id="@+id/btn_RegisterActon"
+        android:layout_width="355dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#FCBF47"
+        android:fontFamily="monospace"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <TextView
+        android:id="@+id/lbl_ExistingAccount"
+        android:layout_width="251dp"
+        android:layout_height="36dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Already Have an Account?"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <Button
+        android:id="@+id/btn_SignInPage"
         android:layout_width="355dp"
         android:layout_height="62dp"
         android:backgroundTint="#FCBF47"
@@ -108,33 +157,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.775" />
-
-    <Button
-        android:id="@+id/btn_RegistrationPage"
-        android:layout_width="355dp"
-        android:layout_height="62dp"
-        android:backgroundTint="#FCBF47"
-        android:fontFamily="monospace"
-        android:text="Create an Account"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.944" />
-
-    <TextView
-        android:id="@+id/lbl_NoAccount"
-        android:layout_width="235dp"
-        android:layout_height="31dp"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:text="Don't have an account?"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.844" />
+        app:layout_constraintVertical_bias="0.976" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
