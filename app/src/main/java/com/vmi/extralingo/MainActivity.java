@@ -19,13 +19,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btn_registerPage = findViewById(R.id.btn_RegistrationPage);
-        btn_registerPage.setOnClickListener(new View.OnClickListener() {
+        pageSwitchRegistration(btn_registerPage);
+    }
+
+    public void pageSwitchRegistration(Button btn_registration){
+        btn_registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, RegistrationActivity.class));
             }
         });
     }
-
 
 }

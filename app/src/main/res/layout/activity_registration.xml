@@ -152,7 +152,7 @@
         android:layout_height="62dp"
         android:backgroundTint="#FCBF47"
         android:fontFamily="monospace"
-        android:text="Sign In"
+        android:text="Sign In to an Existing Account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
