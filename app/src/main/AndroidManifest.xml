@@ -15,7 +15,10 @@
         <activity
             android:name=".RegistrationActivity"
             android:exported="false"
-            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.Extralingo" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="false"
             android:theme="@style/Theme.Extralingo" />
         <activity
             android:name=".MainActivity"
