@@ -12,9 +12,10 @@
         android:layout_width="304dp"
         android:layout_height="65dp"
         android:fontFamily="monospace"
-        android:text="Extralingo"
+        android:text="@string/extralingo"
         android:textSize="50sp"
         android:gravity="center"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -23,6 +24,9 @@
         app:layout_constraintVertical_bias="0.046" />
 
 <!--    MASCOT IMAGE    -->
+
+    <!--    USERNAME TEXT FIELD     -->
+
     <ImageView
         android:id="@+id/img_Mascot"
         android:layout_width="163dp"
@@ -32,42 +36,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23"
+        app:layout_constraintVertical_bias="0.162"
         app:srcCompat="@drawable/extralingo_mascot" />
 
-    <!--    USERNAME TEXT FIELD     -->
     <EditText
         android:id="@+id/txt_UsernameInput"
         android:layout_width="231dp"
         android:layout_height="60dp"
         android:ems="10"
         android:fontFamily="monospace"
-        android:hint="Username"
+        android:hint="@string/username"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintHorizontal_bias="0.916"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintVertical_bias="0.424" />
 
-    <!--    PASSWORD TEXT FIELD      -->
     <EditText
         android:id="@+id/txt_PasswordInput"
         android:layout_width="231dp"
         android:layout_height="60dp"
         android:ems="10"
         android:fontFamily="monospace"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.916"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.563" />
 
-<!--    PASSWORD LABEL      -->
     <TextView
         android:id="@+id/lbl_Password"
         android:layout_width="130dp"
@@ -75,35 +76,44 @@
         android:fontFamily="monospace"
         android:text="@string/password"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59" />
+        app:layout_constraintVertical_bias="0.556" />
 
-<!--    USERNAME LABEL      -->
     <TextView
         android:id="@+id/lbl_Username"
         android:layout_width="130dp"
         android:layout_height="30dp"
         android:fontFamily="monospace"
-        android:text="Username"
+        android:text="@string/username"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.463" />
+        app:layout_constraintVertical_bias="0.429" />
+
+    <!--    PASSWORD TEXT FIELD      -->
+
+    <!--    PASSWORD LABEL      -->
+
+    <!--    USERNAME LABEL      -->
 
     <Button
         android:id="@+id/btn_SignInAction"
         android:layout_width="355dp"
         android:layout_height="62dp"
-        android:backgroundTint="#FCBF47"
+        android:backgroundTint="#FED14A"
         android:fontFamily="monospace"
         android:text="@string/sign_in"
+        android:textStyle="bold"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,9 +124,11 @@
         android:id="@+id/btn_RegistrationPage"
         android:layout_width="355dp"
         android:layout_height="62dp"
-        android:backgroundTint="#FCBF47"
+        android:backgroundTint="#FED14A"
         android:fontFamily="monospace"
         android:text="@string/create_an_account"
+        android:textStyle="bold"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

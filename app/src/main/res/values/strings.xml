@@ -48,4 +48,23 @@
     <string name="extralingo_mascot">extralingo mascot</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="password">Password</string>
+    <string name="button_for_food_lesson">Button for Food Lesson</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="food">Food</string>
+    <string name="what_do_you_want_to_talk_about">What do you want to talk about?</string>
+    <string name="speech_bubble_for_c3po">Speech bubble for C3PO</string>
+    <string name="extralingo">Extralingo</string>
+    <string name="username">Username</string>
+    <string name="account">Account</string>
+    <string name="lessons">Lessons</string>
+    <string name="progress">Progress</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="register">Register</string>
+    <string name="sign_in_to_an_existing_account">Sign In to an Existing Account</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="email">Email</string>
+    <string name="lodging">Lodging</string>
+    <string name="weather">Weather</string>
+    <string name="transport">Transport</string>
+    <string name="sign_in_to_your_account">Sign In to Your Account</string>
 </resources>
