@@ -63,4 +63,8 @@
     <string name="sign_in_to_an_existing_account">Sign In to an Existing Account</string>
     <string name="already_have_an_account">Already Have an Account?</string>
     <string name="email">Email</string>
+    <string name="lodging">Lodging</string>
+    <string name="weather">Weather</string>
+    <string name="transport">Transport</string>
+    <string name="sign_in_to_your_account">Sign In to Your Account</string>
 </resources>

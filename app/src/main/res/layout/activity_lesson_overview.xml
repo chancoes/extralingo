@@ -78,6 +78,99 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.505" />
 
+    <ImageButton
+        android:id="@+id/btn_menu_weather_lesson"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@null"
+        android:contentDescription="@string/button_for_food_lesson"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/weather_icon" />
+
+    <TextView
+        android:id="@+id/lbl_weather_lesson"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/weather"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <ImageButton
+        android:id="@+id/btn_menu_lodging_lesson"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@null"
+        android:contentDescription="@string/button_for_food_lesson"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718"
+        app:srcCompat="@drawable/hotel_icon" />
+
+    <TextView
+        android:id="@+id/lbl_lodging_lesson"
+        android:layout_width="116dp"
+        android:layout_height="36dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/lodging"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
+
+    <ImageButton
+        android:id="@+id/btn_menu_transport_lesson"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@null"
+        android:contentDescription="@string/button_for_food_lesson"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711"
+        app:srcCompat="@drawable/transportation_icon" />
+
+    <TextView
+        android:id="@+id/lbl_transport_lesson"
+        android:layout_width="144dp"
+        android:layout_height="34dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/transport"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
     <Button
         android:id="@+id/btn_return_main_menu"
         android:layout_width="410dp"
@@ -86,6 +179,7 @@
         android:fontFamily="monospace"
         android:text="@string/main_menu"
         android:textStyle="bold"
+        android:textSize="30sp"
         app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

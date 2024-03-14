@@ -34,6 +34,21 @@
         app:srcCompat="@drawable/extralingo_mascot" />
 
     <Button
+        android:id="@+id/btn_menu_lessons"
+        android:layout_width="355dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#FED14A"
+        android:fontFamily="monospace"
+        android:text="@string/lessons"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397" />
+
+    <Button
         android:id="@+id/btn_menu_signOut"
         android:layout_width="355dp"
         android:layout_height="62dp"
@@ -41,11 +56,12 @@
         android:fontFamily="monospace"
         android:text="@string/sign_out"
         android:textStyle="bold"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817" />
+        app:layout_constraintVertical_bias="0.889" />
 
     <Button
         android:id="@+id/btn_menu_progress"
@@ -55,11 +71,12 @@
         android:fontFamily="monospace"
         android:text="@string/progress"
         android:textStyle="bold"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintVertical_bias="0.556" />
 
     <Button
         android:id="@+id/btn_menu_account"
@@ -69,24 +86,11 @@
         android:fontFamily="monospace"
         android:text="@string/account"
         android:textStyle="bold"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.668" />
-
-    <Button
-        android:id="@+id/btn_menu_lessons"
-        android:layout_width="355dp"
-        android:layout_height="62dp"
-        android:backgroundTint="#FED14A"
-        android:fontFamily="monospace"
-        android:text="@string/lessons"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintVertical_bias="0.723" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
