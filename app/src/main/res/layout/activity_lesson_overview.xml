@@ -5,20 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/lbl_Title"
-        android:layout_width="304dp"
-        android:layout_height="65dp"
-        android:fontFamily="monospace"
-        android:text="Lessons"
-        android:textSize="50sp"
-        android:gravity="center"
+    <ImageView
+        android:id="@+id/img_speech_bubble"
+        android:layout_width="143dp"
+        android:layout_height="133dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/speech_bubble" />
+
+    <ImageView
+        android:id="@+id/img_Mascot"
+        android:layout_width="163dp"
+        android:layout_height="145dp"
+        android:contentDescription="@string/extralingo_mascot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104"
+        app:srcCompat="@drawable/extralingo_mascot" />
+
+    <TextView
+        android:id="@+id/lbl_instructions_bubble"
+        android:layout_width="125dp"
+        android:layout_height="90dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="What do you want to talk about?"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
     <ImageButton
         android:id="@+id/btn_menu_food_lesson"
@@ -28,10 +53,10 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.228"
+        app:layout_constraintVertical_bias="0.363"
         app:srcCompat="@drawable/food_icon" />
 
     <TextView
@@ -44,9 +69,24 @@
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintVertical_bias="0.505" />
+
+    <Button
+        android:id="@+id/btn_return_main_menu"
+        android:layout_width="410dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#FCBF47"
+        android:fontFamily="monospace"
+        android:text="Main Menu"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
