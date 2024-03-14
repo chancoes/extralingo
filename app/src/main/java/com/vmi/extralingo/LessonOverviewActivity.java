@@ -14,6 +14,17 @@ public class LessonOverviewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lesson_overview);
 
         ImageButton btn_foodLessonAction = findViewById(R.id.btn_menu_food_lesson);
+        Button btn_returnMainMenu = findViewById(R.id.btn_return_main_menu);
 
+        pageSwitchMainMenu(btn_returnMainMenu);
+    }
+
+    public void pageSwitchMainMenu(Button btn_main_menu){
+        btn_main_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LessonOverviewActivity.this, MainMenuActivity.class));
+            }
+        });
     }
 }
