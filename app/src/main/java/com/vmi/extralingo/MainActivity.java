@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+    public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btn_RegistrationPage = findViewById(R.id.btn_RegistrationPage);
         Button btn_signInAction = findViewById(R.id.btn_SignInAction);
-        
+
         pageSwitchRegistration(btn_RegistrationPage);
         pageSwitchMainMenu(btn_signInAction);
     }
