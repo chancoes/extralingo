@@ -14,8 +14,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn_registerPage = findViewById(R.id.btn_RegistrationPage);
-        pageSwitchRegistration(btn_registerPage);
+        Button btn_RegistrationPage = findViewById(R.id.btn_RegistrationPage);
+        Button btn_signInAction = findViewById(R.id.btn_SignInAction);
+        
+        pageSwitchRegistration(btn_RegistrationPage);
+        pageSwitchMainMenu(btn_signInAction);
+    }
+
+    public void pageSwitchMainMenu(Button btn_signIn){
+        btn_signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MainMenuActivity.class));
+            }
+        });
     }
 
     public void pageSwitchRegistration(Button btn_registration){
