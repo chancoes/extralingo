@@ -13,6 +13,7 @@
         android:text="@string/extralingo"
         android:textSize="50sp"
         android:gravity="center"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -29,23 +30,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23"
+        app:layout_constraintVertical_bias="0.162"
         app:srcCompat="@drawable/extralingo_mascot" />
-
-    <EditText
-        android:id="@+id/txt_UsernameInput"
-        android:layout_width="231dp"
-        android:layout_height="60dp"
-        android:ems="10"
-        android:fontFamily="monospace"
-        android:hint="@string/username"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.911"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46" />
 
     <TextView
         android:id="@+id/lbl_Username"
@@ -54,12 +40,13 @@
         android:fontFamily="monospace"
         android:text="@string/username"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.463" />
+        app:layout_constraintVertical_bias="0.406" />
 
     <EditText
         android:id="@+id/txt_EmailInput"
@@ -74,21 +61,22 @@
         app:layout_constraintHorizontal_bias="0.916"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579" />
+        app:layout_constraintVertical_bias="0.52" />
 
     <TextView
-        android:id="@+id/lbl_password"
+        android:id="@+id/lbl_Email"
         android:layout_width="130dp"
         android:layout_height="30dp"
         android:fontFamily="monospace"
-        android:text="@string/password"
+        android:text="@string/email"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693" />
+        app:layout_constraintVertical_bias="0.524" />
 
     <EditText
         android:id="@+id/txt_PasswordInput"
@@ -103,29 +91,46 @@
         app:layout_constraintHorizontal_bias="0.916"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintVertical_bias="0.649" />
 
     <TextView
-        android:id="@+id/lbl_Email"
+        android:id="@+id/lbl_password"
         android:layout_width="130dp"
         android:layout_height="30dp"
         android:fontFamily="monospace"
-        android:text="@string/email"
+        android:text="@string/password"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.582" />
+        app:layout_constraintVertical_bias="0.636" />
+
+    <EditText
+        android:id="@+id/txt_UsernameInput"
+        android:layout_width="231dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="@string/username"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
 
     <Button
         android:id="@+id/btn_RegisterActon"
         android:layout_width="355dp"
         android:layout_height="62dp"
-        android:backgroundTint="#FCBF47"
+        android:backgroundTint="#FED14A"
         android:fontFamily="monospace"
         android:text="@string/register"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -150,9 +155,10 @@
         android:id="@+id/btn_SignInPage"
         android:layout_width="355dp"
         android:layout_height="62dp"
-        android:backgroundTint="#FCBF47"
+        android:backgroundTint="#FED14A"
         android:fontFamily="monospace"
         android:text="@string/sign_in_to_an_existing_account"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
