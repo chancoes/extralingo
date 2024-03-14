@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btn_RegistrationPage = findViewById(R.id.btn_RegistrationPage);
         Button btn_signInAction = findViewById(R.id.btn_SignInAction);
-        
+
         pageSwitchRegistration(btn_RegistrationPage);
         pageSwitchMainMenu(btn_signInAction);
     }
