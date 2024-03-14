@@ -43,4 +43,9 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="extralingo_mascot">extralingo mascot</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="password">Password</string>
 </resources>
