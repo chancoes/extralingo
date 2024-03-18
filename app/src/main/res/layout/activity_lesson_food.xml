@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_speech_bubble_output"
+        android:layout_width="409dp"
+        android:layout_height="281dp"
+        android:contentDescription="@string/speech_bubble_for_c3po"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88"
+        app:srcCompat="@drawable/speech_bubble" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_chatOutput_food"
+        android:layout_width="248dp"
+        android:layout_height="113dp"
+        android:hint="ChatGPT's Response"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744" />
+
+    <ImageView
+        android:id="@+id/img_Mascot"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/extralingo_mascot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92"
+        app:srcCompat="@drawable/extralingo_mascot" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_chatInput_food"
+        android:layout_width="248dp"
+        android:layout_height="113dp"
+        android:hint="Enter Your Message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <ImageView
+        android:id="@+id/img_speech_bubble_input"
+        android:layout_width="409dp"
+        android:layout_height="281dp"
+        android:contentDescription="@string/speech_bubble_for_c3po"
+        android:scaleType="fitCenter"
+        android:scaleX="-1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102"
+        app:srcCompat="@drawable/speech_bubble" />
+
+    <ImageView
+        android:id="@+id/img_user_picture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/extralingo_mascot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421"
+        app:srcCompat="@drawable/extralingo_mascot" />
+
+    <Button
+        android:id="@+id/btn_send_lesson_food"
+        android:layout_width="410dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#FED14A"
+        android:fontFamily="monospace"
+        android:text="Send Message"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/btn_return_lesson_overview_food"
+        android:layout_width="410dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#FED14A"
+        android:fontFamily="monospace"
+        android:text="Return to Lessons"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

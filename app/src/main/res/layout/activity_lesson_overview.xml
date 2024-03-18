@@ -153,7 +153,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.711"
-        app:srcCompat="@drawable/transportation_icon" />
+        app:srcCompat="@drawable/transport_icon" />
 
     <TextView
         android:id="@+id/lbl_transport_lesson"
