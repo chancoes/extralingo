@@ -29,7 +29,7 @@ import org.json.JSONObject;
 
 public class LessonFoodActivity extends AppCompatActivity {
 
-    String getURL = "https://ba79dc44-7e08-463a-aded-7eb164b16714-00-2a6h01tfr8pef.janeway.repl.co/assist?prompt=";
+    String originalURL = "https://ba79dc44-7e08-463a-aded-7eb164b16714-00-2a6h01tfr8pef.janeway.repl.co/assist?prompt=";
     String chatResponse = "";
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +46,7 @@ public class LessonFoodActivity extends AppCompatActivity {
             String chatInput = inputTextBox.getText().toString();
             Log.w("User Input", chatInput);
 
-            chatGPT(chatInput, outputTextBox);
+            chatGPT(chatInput, outputTextBox, inputTextBox);
 //            outputTextBox.setText(chatResponse);
         });
 
@@ -63,9 +63,9 @@ public class LessonFoodActivity extends AppCompatActivity {
         });
     }
 
-    public void chatGPT(String userInput, TextInputEditText outputBox){
+    public void chatGPT(String userInput, TextInputEditText outputBox, TextInputEditText inputBox){
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        getURL = getURL + encodeValue(userInput);
+        String getURL = originalURL + encodeValue(userInput);
         Log.w("Updated URL: ", getURL);
         String chatOutput;
         JsonObjectRequest objectRequest = new JsonObjectRequest(
@@ -76,6 +76,7 @@ public class LessonFoodActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         Log.e("Rest Response: ", response.toString());
+                        inputBox.setText("");
                         outputBox.setText(response.toString());
                     }
                 },
@@ -88,6 +89,7 @@ public class LessonFoodActivity extends AppCompatActivity {
                 }
         );
         requestQueue.add(objectRequest);
+        getURL = originalURL;
     }
 
     private static String encodeValue(String value) {
