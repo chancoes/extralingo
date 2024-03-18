@@ -37,7 +37,20 @@ public class LessonFoodActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lesson_food);
 
         Button btn_lessonOverviewAction = findViewById(R.id.btn_return_lesson_overview_food);
+        Button btnSendChat = findViewById(R.id.btn_send_lesson_food);
 
+        TextInputEditText inputTextBox = findViewById(R.id.txt_chatInput_food);
+        TextInputEditText outputTextBox = findViewById(R.id.txt_chatOutput_food);
+//      CHAT GPT INTEGRATION
+        btnSendChat.setOnClickListener(v -> {
+            String chatInput = inputTextBox.getText().toString();
+            Log.w("User Input", chatInput);
+
+            chatGPT(chatInput, outputTextBox);
+//            outputTextBox.setText(chatResponse);
+        });
+
+//      PAGE SWITCHES
         pageSwitchLessonOverview(btn_lessonOverviewAction);
     }
 

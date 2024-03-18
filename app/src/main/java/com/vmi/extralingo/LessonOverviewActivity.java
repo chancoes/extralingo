@@ -17,6 +17,17 @@ public class LessonOverviewActivity extends AppCompatActivity {
         Button btn_returnMainMenu = findViewById(R.id.btn_return_main_menu);
 
         pageSwitchMainMenu(btn_returnMainMenu);
+        pageSwitchFoodLesson(btn_foodLessonAction);
+
+    }
+
+    public void pageSwitchFoodLesson(ImageButton btn_food_lesson){
+        btn_food_lesson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LessonOverviewActivity.this, LessonFoodActivity.class));
+            }
+        });
     }
 
     public void pageSwitchMainMenu(Button btn_main_menu){
@@ -27,4 +38,5 @@ public class LessonOverviewActivity extends AppCompatActivity {
             }
         });
     }
+
 }
