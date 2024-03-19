@@ -77,7 +77,8 @@ public class LessonFoodActivity extends AppCompatActivity {
                     public void onResponse(JSONObject response) {
                         Log.e("Rest Response: ", response.toString());
                         inputBox.setText("");
-                        outputBox.setText(response.toString());
+                        chatResponse = response.toString();
+                        outputBox.setText(chatResponse.substring(chatResponse.indexOf(":") + 2, chatResponse.length() - 2));
                     }
                 },
                 new Response.ErrorListener() {
