@@ -4,39 +4,62 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-    public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity {
+        EditText txt_UsernameInput, txt_PasswordInput;
+        Button btn_SignInAction, btn_RegistrationPage;
+        DBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn_RegistrationPage = findViewById(R.id.btn_RegistrationPage);
-        Button btn_signInAction = findViewById(R.id.btn_SignInAction);
+        DB = new DBHelper(this);
+        txt_UsernameInput = findViewById(R.id.txt_UsernameInput);
+        txt_PasswordInput = findViewById(R.id.txt_PasswordInput);
+        btn_RegistrationPage = findViewById(R.id.btn_RegistrationPage);
+        btn_SignInAction = findViewById(R.id.btn_SignInAction);
 
-        pageSwitchRegistration(btn_RegistrationPage);
-        pageSwitchMainMenu(btn_signInAction);
-    }
-
-    public void pageSwitchMainMenu(Button btn_signIn){
-        btn_signIn.setOnClickListener(new View.OnClickListener() {
+        btn_SignInAction.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainMenuActivity.class));
+                String user = txt_UsernameInput.getText().toString();
+                String pass = txt_PasswordInput.getText().toString();
+
+                if(TextUtils.isEmpty(user) || TextUtils.isEmpty(pass)) {
+                    Toast.makeText(MainActivity.this, "All fields Required", Toast.LENGTH_SHORT).show();
+                }else{
+                    Log.e("Username", user);
+                    Log.e("Password", pass);
+                    Boolean checkuserpass = DB.checkusernamepassword(user,pass);
+
+                    if(checkuserpass == true){
+                        Toast.makeText(MainActivity.this, "Login Successful",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getApplicationContext(), MainMenuActivity.class);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(MainActivity.this, "Login Failed",Toast.LENGTH_SHORT).show();
+
+                    }
+                }
+            }
+        });
+
+        btn_RegistrationPage.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(getApplicationContext(), RegistrationActivity.class);
+                startActivity(intent);
             }
         });
     }
 
-    public void pageSwitchRegistration(Button btn_registration){
-        btn_registration.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, RegistrationActivity.class));
-            }
-        });
-    }
+
 
 }
