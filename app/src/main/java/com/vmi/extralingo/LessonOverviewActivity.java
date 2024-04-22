@@ -14,13 +14,24 @@ public class LessonOverviewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lesson_overview);
 
         ImageButton btn_foodLessonAction = findViewById(R.id.btn_menu_food_lesson);
+        ImageButton btn_lodgingLessonAction = findViewById(R.id.btn_menu_lodging_lesson);
+
         Button btn_returnMainMenu = findViewById(R.id.btn_return_main_menu);
 
         pageSwitchMainMenu(btn_returnMainMenu);
         pageSwitchFoodLesson(btn_foodLessonAction);
+        pageSwitchFoodLesson(btn_lodgingLessonAction);
 
     }
 
+    public void pageSwitchLodgingLesson(ImageButton btn_lodging_lesson){
+        btn_lodging_lesson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LessonOverviewActivity.this, LessonFoodActivity.class));
+            }
+        });
+    }
     public void pageSwitchFoodLesson(ImageButton btn_food_lesson){
         btn_food_lesson.setOnClickListener(new View.OnClickListener() {
             @Override
