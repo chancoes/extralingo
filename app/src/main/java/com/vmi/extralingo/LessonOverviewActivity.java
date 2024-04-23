@@ -15,16 +15,27 @@ public class LessonOverviewActivity extends AppCompatActivity {
 
         ImageButton btn_foodLessonAction = findViewById(R.id.btn_menu_food_lesson);
         ImageButton btn_lodgingLessonAction = findViewById(R.id.btn_menu_lodging_lesson);
-        ImageButton btn_lodgingWeatherAction = findViewById(R.id.btn_menu_weather_lesson);
+        ImageButton btn_weatherAction = findViewById(R.id.btn_menu_weather_lesson);
+        ImageButton btn_transportAction = findViewById(R.id.btn_menu_transport_lesson);
 
         Button btn_returnMainMenu = findViewById(R.id.btn_return_main_menu);
 
         pageSwitchMainMenu(btn_returnMainMenu);
         pageSwitchFoodLesson(btn_foodLessonAction);
         pageSwitchLodgingLesson(btn_lodgingLessonAction);
-        pageSwitchWeatherLesson(btn_lodgingWeatherAction);
+        pageSwitchWeatherLesson(btn_weatherAction);
+        pageSwitchTransportLesson(btn_transportAction);
 
 
+    }
+
+    public void pageSwitchTransportLesson(ImageButton btn_transport_lesson){
+        btn_transport_lesson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LessonOverviewActivity.this, LessonTransportActivity.class));
+            }
+        });
     }
 
     public void pageSwitchWeatherLesson(ImageButton btn_weather_lesson){
