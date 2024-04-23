@@ -27,18 +27,23 @@ public class LessonLodgingActivity extends AppCompatActivity {
     String originalURL = "https://ba79dc44-7e08-463a-aded-7eb164b16714-00-2a6h01tfr8pef.janeway.repl.co/assist?prompt=";
     String chatResponse = "";
 
+    String lessonStarter = "Let’s talk about travel lodging in Spanish! We will only communicate in Spanish. Do your best to use cognates and context clues to help you out! If you’re stuck, use a dictionary or translation tool to help. Reply to this sentence in Spanish “¿Para cuántas noches quieres reservar tu hotel en Madrid?”";
+    String lessonPrompt = "This is a Spanish lesson about travel lodging. The text I started this message with in the parenthesis should be in Spanish. If it is not, tell me to speak in Spanish instead and ask me another question about travel lodging. If what I said in Spanish is not logical or has spelling or grammar errors, please tell me in 1-3 sentences what the problem with it is then ask me another question about travel lodging. If what I said in the parenthesis is in correct Spanish, please give me a quick 1-3 sentence response to that and ask me another question in Spanish to answer relating to travel lodging.";
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lesson_food);
+        setContentView(R.layout.activity_lesson_lodging);
 
-        Button btn_lessonOverviewAction = findViewById(R.id.btn_return_lesson_overview_food);
-        Button btnSendChat = findViewById(R.id.btn_send_lesson_food);
+        Button btn_lessonOverviewAction = findViewById(R.id.btn_return_lesson_overview_lodging);
+        Button btnSendChat = findViewById(R.id.btn_send_lesson_lodging);
 
-        TextInputEditText inputTextBox = findViewById(R.id.txt_chatInput_food);
-        TextInputEditText outputTextBox = findViewById(R.id.txt_chatOutput_food);
+        TextInputEditText inputTextBox = findViewById(R.id.txt_chatInput_lodging);
+        TextInputEditText outputTextBox = findViewById(R.id.txt_chatOutput_lodging);
+        outputTextBox.setText(lessonStarter);
 //      CHAT GPT INTEGRATION
         btnSendChat.setOnClickListener(v -> {
             String chatInput = inputTextBox.getText().toString();
+            chatInput = "(" + chatInput +")" + lessonPrompt;
             Log.w("User Input", chatInput);
 
             chatGPT(chatInput, outputTextBox, inputTextBox);
