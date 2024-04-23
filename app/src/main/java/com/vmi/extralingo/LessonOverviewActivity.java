@@ -18,9 +18,9 @@ public class LessonOverviewActivity extends AppCompatActivity {
         ImageButton btn_weatherAction = findViewById(R.id.btn_menu_weather_lesson);
         ImageButton btn_transportAction = findViewById(R.id.btn_menu_transport_lesson);
 
-        Button btn_returnMainMenu = findViewById(R.id.btn_return_main_menu);
+        Button btn_signOut = findViewById(R.id.btn_signOutLessons);
 
-        pageSwitchMainMenu(btn_returnMainMenu);
+        pageSwitchSignOut(btn_signOut);
         pageSwitchFoodLesson(btn_foodLessonAction);
         pageSwitchLodgingLesson(btn_lodgingLessonAction);
         pageSwitchWeatherLesson(btn_weatherAction);
@@ -73,4 +73,12 @@ public class LessonOverviewActivity extends AppCompatActivity {
         });
     }
 
+    public void pageSwitchSignOut(Button btn_signOut){
+        btn_signOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LessonOverviewActivity.this, MainActivity.class));
+            }
+        });
+    }
 }

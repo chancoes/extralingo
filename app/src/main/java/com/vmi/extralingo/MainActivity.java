@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
                     if(checkuserpass == true){
                         Toast.makeText(MainActivity.this, "Login Successful",Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getApplicationContext(), MainMenuActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), LessonOverviewActivity.class);
                         startActivity(intent);
                     }else{
                         Toast.makeText(MainActivity.this, "Login Failed",Toast.LENGTH_SHORT).show();

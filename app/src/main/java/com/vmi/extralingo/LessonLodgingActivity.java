@@ -2,6 +2,7 @@ package com.vmi.extralingo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,7 @@ import org.json.JSONObject;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
+import java.util.Locale;
 
 public class LessonLodgingActivity extends AppCompatActivity {
 
@@ -30,12 +32,25 @@ public class LessonLodgingActivity extends AppCompatActivity {
     String lessonStarter = "Let’s talk about travel lodging in Spanish! We will only communicate in Spanish. Do your best to use cognates and context clues to help you out! If you’re stuck, use a dictionary or translation tool to help. Reply to this sentence in Spanish “¿Para cuántas noches quieres reservar tu hotel en Madrid?”";
     String lessonPrompt = "This is a Spanish lesson about travel lodging. The text I started this message with in the parenthesis should be in Spanish. If it is not, tell me to speak in Spanish instead and ask me another question about travel lodging. If what I said in Spanish is not logical or has spelling or grammar errors, please tell me in 1-3 sentences what the problem with it is then ask me another question about travel lodging. If what I said in the parenthesis is in correct Spanish, please give me a quick 1-3 sentence response to that and ask me another question in Spanish to answer relating to travel lodging.";
 
+    TextToSpeech tts;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson_lodging);
 
+        Locale locSpanish = new Locale("spa", "MEX");
+        tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status != TextToSpeech.ERROR){
+                    tts.setLanguage(locSpanish);
+                }
+            }
+        });
+
         Button btn_lessonOverviewAction = findViewById(R.id.btn_return_lesson_overview_lodging);
         Button btnSendChat = findViewById(R.id.btn_send_lesson_lodging);
+        Button btn_tts = findViewById(R.id.btn_tts_lodging);
 
         TextInputEditText inputTextBox = findViewById(R.id.txt_chatInput_lodging);
         TextInputEditText outputTextBox = findViewById(R.id.txt_chatOutput_lodging);
@@ -49,6 +64,12 @@ public class LessonLodgingActivity extends AppCompatActivity {
             chatGPT(chatInput, outputTextBox, inputTextBox);
 //            outputTextBox.setText(chatResponse);
         });
+
+        btn_tts.setOnClickListener(v -> {
+            String speakThis = outputTextBox.getText().toString();
+            tts.speak(speakThis, TextToSpeech.QUEUE_ADD, null);
+        });
+
 
 //      PAGE SWITCHES
         pageSwitchLessonOverview(btn_lessonOverviewAction);
