@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/speech_bubble" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/txt_chatOutput_food"
+        android:id="@+id/txt_chatOutput_transport"
         android:layout_width="380dp"
         android:layout_height="200dp"
         android:editable="false"
@@ -65,7 +65,7 @@
         app:srcCompat="@drawable/speech_bubble" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/txt_chatInput_food"
+        android:id="@+id/txt_chatInput_transport"
         android:layout_width="380dp"
         android:layout_height="200dp"
         android:hint="Enter Your Message"
@@ -90,7 +90,7 @@
         app:srcCompat="@drawable/extralingo_mascot" />
 
     <Button
-        android:id="@+id/btn_send_lesson_food"
+        android:id="@+id/btn_send_lesson_transport"
         android:layout_width="190dp"
         android:layout_height="60dp"
         android:backgroundTint="#FED14A"
@@ -107,7 +107,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btn_return_lesson_overview_food"
+        android:id="@+id/btn_return_lesson_overview_transport"
         android:layout_width="190dp"
         android:layout_height="60dp"
         android:backgroundTint="#FED14A"
@@ -124,7 +124,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btn_tts_food"
+        android:id="@+id/btn_tts_transport"
         android:layout_width="138dp"
         android:layout_height="51dp"
         android:backgroundTint="#FED14A"

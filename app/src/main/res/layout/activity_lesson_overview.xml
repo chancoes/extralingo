@@ -172,12 +172,12 @@
         app:layout_constraintVertical_bias="0.805" />
 
     <Button
-        android:id="@+id/btn_return_main_menu"
+        android:id="@+id/btn_signOutLessons"
         android:layout_width="410dp"
         android:layout_height="54dp"
         android:backgroundTint="#FED14A"
         android:fontFamily="monospace"
-        android:text="@string/main_menu"
+        android:text="@string/sign_out"
         android:textStyle="bold"
         android:textSize="30sp"
         app:cornerRadius="0dp"

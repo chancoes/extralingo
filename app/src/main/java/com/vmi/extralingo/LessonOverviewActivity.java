@@ -14,13 +14,47 @@ public class LessonOverviewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lesson_overview);
 
         ImageButton btn_foodLessonAction = findViewById(R.id.btn_menu_food_lesson);
-        Button btn_returnMainMenu = findViewById(R.id.btn_return_main_menu);
+        ImageButton btn_lodgingLessonAction = findViewById(R.id.btn_menu_lodging_lesson);
+        ImageButton btn_weatherAction = findViewById(R.id.btn_menu_weather_lesson);
+        ImageButton btn_transportAction = findViewById(R.id.btn_menu_transport_lesson);
 
-        pageSwitchMainMenu(btn_returnMainMenu);
+        Button btn_signOut = findViewById(R.id.btn_signOutLessons);
+
+        pageSwitchSignOut(btn_signOut);
         pageSwitchFoodLesson(btn_foodLessonAction);
+        pageSwitchLodgingLesson(btn_lodgingLessonAction);
+        pageSwitchWeatherLesson(btn_weatherAction);
+        pageSwitchTransportLesson(btn_transportAction);
+
 
     }
 
+    public void pageSwitchTransportLesson(ImageButton btn_transport_lesson){
+        btn_transport_lesson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LessonOverviewActivity.this, LessonTransportActivity.class));
+            }
+        });
+    }
+
+    public void pageSwitchWeatherLesson(ImageButton btn_weather_lesson){
+        btn_weather_lesson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LessonOverviewActivity.this, LessonWeatherActivity.class));
+            }
+        });
+    }
+
+    public void pageSwitchLodgingLesson(ImageButton btn_lodging_lesson){
+        btn_lodging_lesson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LessonOverviewActivity.this, LessonLodgingActivity.class));
+            }
+        });
+    }
     public void pageSwitchFoodLesson(ImageButton btn_food_lesson){
         btn_food_lesson.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,4 +73,12 @@ public class LessonOverviewActivity extends AppCompatActivity {
         });
     }
 
+    public void pageSwitchSignOut(Button btn_signOut){
+        btn_signOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LessonOverviewActivity.this, MainActivity.class));
+            }
+        });
+    }
 }
