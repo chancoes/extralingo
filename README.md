@@ -1,0 +1,1 @@
+In order to deploy the product, the user will need either an IDE which has an Android device emulator or an Android device to deploy to. For this project, the team used Android Studio and the code was loaded into the emulated phone to be launched as an application.
